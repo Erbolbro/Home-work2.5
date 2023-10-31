@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/photo1" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/photo2" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_margin="10dp"
+        android:text="Rent a car"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:drawableStart="@drawable/photo3"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/blue"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/edit1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#0043EA">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:src="@drawable/photo4" />
+
+        <TextView
+            android:id="@+id/bogamy"
+            android:layout_width="88dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Bogamy"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="138dp"
+        android:layout_height="102dp"
+        android:layout_alignTop="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/velik" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ping"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/blue"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/ping">
+
+        <ImageView
+            android:id="@+id/ping2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:src="@drawable/photo4" />
+
+        <TextView
+            android:id="@+id/bogamy2"
+            android:layout_width="88dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Bogamy"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="138dp"
+        android:layout_height="102dp"
+        android:layout_alignTop="@+id/ping"
+        android:layout_alignBottom="@+id/ping"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/car1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/ping"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/green">
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/photo4" />
+
+        <TextView
+            android:id="@+id/bogamy3"
+            android:layout_width="88dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Bogamy"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/car_2"
+        android:layout_width="138dp"
+        android:layout_height="102dp"
+        android:layout_alignTop="@+id/green"
+        android:layout_alignBottom="@+id/green"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/car2" />
+
+</RelativeLayout>
